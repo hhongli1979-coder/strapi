@@ -1,169 +1,355 @@
-<p align="center">
-  <a href="https://strapi.io/#gh-light-mode-only">
-    <img src="https://strapi.io/assets/strapi-logo-dark.svg" width="318px" alt="Strapi logo" />
-  </a>
-  <a href="https://strapi.io/#gh-dark-mode-only">
-    <img src="https://strapi.io/assets/strapi-logo-light.svg" width="318px" alt="Strapi logo" />
-  </a>
-</p>
+# DeployHub - Modern Deployment Platform 🚀
 
-<h3 align="center">Open-source headless CMS, self-hosted or Cloud you’re in control.</h3>
-<p align="center">The leading open-source headless CMS, 100% JavaScript/TypeScript, flexible and fully customizable.</p>
-<p align="center"><a href="https://cloud.strapi.io/signups?source=github1">Cloud</a> · <a href="https://strapi.io/demo?utm_campaign=Growth-Experiments&utm_source=strapi%2Fstrapi%20README.md">Try live demo</a></p>
-<br />
+A production-ready, enterprise-grade deployment management platform built with Nuxt 3, featuring a comprehensive component library, real-time deployment tracking, and modern UI/UX.
 
-<p align="center">
-  <a href="https://www.npmjs.org/package/@strapi/strapi">
-    <img src="https://img.shields.io/npm/v/@strapi/strapi/latest.svg" alt="NPM Version" />
-  </a>
-  <a href="https://github.com/strapi/strapi/actions/workflows/tests.yml">
-    <img src="https://github.com/strapi/strapi/actions/workflows/tests.yml/badge.svg?branch=main" alt="Tests" />
-  </a>
-  <a href="https://discord.strapi.io">
-    <img src="https://img.shields.io/discord/811989166782021633?label=Discord" alt="Strapi on Discord" />
-  </a>
-  <a href="https://github.com/strapi/strapi/actions/workflows/nightly.yml">
-    <img src="https://github.com/strapi/strapi/actions/workflows/nightly.yml/badge.svg" alt="Strapi Nightly Release Build Status" />
-  </a>
-</p>
+![Nuxt](https://img.shields.io/badge/Nuxt-3.12.4-00DC82?logo=nuxt.js)
+![Vue](https://img.shields.io/badge/Vue-3.4.31-4FC08D?logo=vue.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?logo=typescript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-6.12.1-38B2AC?logo=tailwind-css)
 
-<br>
+---
 
-<p align="center">
-  <a href="https://strapi.io">
-    <img src="https://raw.githubusercontent.com/strapi/strapi/main/public/assets/admin-demo.gif" alt="Administration panel" />
-  </a>
-</p>
+## ✨ Features
 
-<br>
+### 🎨 Enterprise UI Component Library
+- **20+ Production-Ready Components**: Buttons, Inputs, Cards, Modals, Dropdowns, Tables, and more
+- **Fully Customizable**: Multiple variants, sizes, and styles for each component
+- **Dark Mode Support**: Seamless light/dark theme switching with persistence
+- **Responsive Design**: Mobile-first approach with responsive layouts
+- **Accessible**: ARIA compliant and keyboard navigable
 
-Strapi Community Edition is a free and open-source headless CMS enabling you to manage any content, anywhere.
+### 🔧 Developer Experience
+- **TypeScript**: Full type safety with comprehensive type definitions
+- **Composables**: Reusable logic with Vue 3 Composition API
+- **Utility Functions**: Validation, formatting, and helper functions
+- **Icon Library**: 100+ icons via lucide-vue-next
+- **Hot Module Replacement**: Lightning-fast development experience
 
-- **Self-hosted or Cloud**: You can host and scale Strapi projects the way you want. You can save time by deploying to [Strapi Cloud](https://cloud.strapi.io/signups?source=github1) or deploy to the hosting platform you want\*\*: AWS, Azure, Google Cloud, DigitalOcean.
-- **Modern Admin Panel**: Elegant, entirely customizable and a fully extensible admin panel.
-- **Multi-database support**: You can choose the database you prefer: PostgreSQL, MySQL, MariaDB, and SQLite.
-- **Customizable**: You can quickly build your logic by fully customizing APIs, routes, or plugins to fit your needs perfectly.
-- **Blazing Fast and Robust**: Built on top of Node.js and TypeScript, Strapi delivers reliable and solid performance.
-- **Front-end Agnostic**: Use any front-end framework (React, Next.js, Vue, Angular, etc.), mobile apps or even IoT.
-- **Secure by default**: Reusable policies, CORS, CSP, P3P, Xframe, XSS, and more.
-- **Powerful CLI**: Scaffold projects and APIs on the fly.
+### 🚀 Deployment Management
+- **Real-time Status**: Track deployment progress with live updates
+- **Project Management**: Create, organize, and manage multiple projects
+- **Deployment History**: Complete audit trail of all deployments
+- **Activity Feed**: Stay informed with activity timeline
+- **Team Collaboration**: Multi-user support with role management
 
-## Getting Started
+### 🔐 Authentication & Security
+- **Supabase Integration**: Secure authentication out of the box
+- **Protected Routes**: Middleware-based route protection
+- **Session Management**: Automatic session handling
+- **API Token Management**: Generate and manage API tokens
 
-<a href="https://docs.strapi.io/developer-docs/latest/getting-started/quick-start.html" target="_blank">Read the Getting Started tutorial</a> or follow the steps below:
+---
 
-### ⏳ Installation
+## 🛠️ Tech Stack
 
-Install Strapi with this **Quickstart** command to create a Strapi project instantly:
+- **Framework**: [Nuxt 3](https://nuxt.com/) - The Intuitive Vue Framework
+- **UI Library**: [TailwindCSS](https://tailwindcss.com/) - Utility-first CSS framework
+- **Icons**: [Lucide Icons](https://lucide.dev/) - Beautiful & consistent icons
+- **Authentication**: [Supabase](https://supabase.com/) - Open source Firebase alternative
+- **State Management**: Vue 3 Composition API with composables
+- **TypeScript**: Full type safety and IntelliSense support
+- **Utilities**: @vueuse/core for essential Vue composition utilities
 
-- (Use **yarn** to install the Strapi project (recommended). [Install yarn with these docs](https://yarnpkg.com/lang/en/docs/install/).)
+---
 
+## 📦 Installation
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, pnpm, or yarn
+
+### Setup
+
+1. **Clone the repository**
 ```bash
-yarn create strapi
+git clone https://github.com/yourusername/deployhub.git
+cd deployhub
 ```
 
-**or**
-
-- (Using npx to install the Strapi project.)
-
+2. **Install dependencies**
 ```bash
-npx create-strapi@latest
+npm install
 ```
 
-This command generates a brand new project with the default features (authentication, permissions, content management, content type builder & file upload).
+3. **Configure environment variables**
+```bash
+cp .env.example .env
+```
 
-Enjoy 🎉
+Edit `.env` and add your Supabase credentials:
+```env
+SUPABASE_URL=your_supabase_url_here
+SUPABASE_KEY=your_supabase_anon_key_here
+```
 
-### 🖐 Requirements
+4. **Start development server**
+```bash
+npm run dev
+```
 
-Complete installation requirements can be found in the documentation under <a href="https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html">Installation Requirements</a>.
+The app will be available at `http://localhost:3000`
 
-**Supported operating systems**:
+---
 
-| OS              | Recommended | Minimum    |
-| --------------- | ----------- | ---------- |
-| Ubuntu          | 24.04       | LTS        |
-| Debian          | 11          | LTS        |
-| RHEL            | 9           | LTS        |
-| macOS           | 14          | 12         |
-| Windows Desktop | 11          | 10         |
-| Windows Server  | No Support  | No Support |
-| Docker          | N/A         | N/A        |
+## 🏗️ Project Structure
 
-(Please note that Strapi may work on other operating systems, but these are not tested nor officially supported at this time.)
+```
+deployhub/
+├── assets/
+│   └── css/
+│       └── main.css           # Global styles and Tailwind
+├── components/
+│   ├── ui/                    # Base UI components
+│   │   ├── Button.vue
+│   │   ├── Input.vue
+│   │   ├── Card.vue
+│   │   ├── Badge.vue
+│   │   ├── Modal.vue
+│   │   ├── Dropdown.vue
+│   │   ├── Tabs.vue
+│   │   └── Tooltip.vue
+│   ├── data/                  # Data display components
+│   │   ├── StatsCard.vue
+│   │   ├── Table.vue
+│   │   └── SearchBar.vue
+│   ├── layout/                # Layout components
+│   │   ├── Sidebar.vue
+│   │   ├── Header.vue
+│   │   └── DashboardLayout.vue
+│   └── advanced/              # Advanced feature components
+│       ├── ThemeToggle.vue
+│       ├── NotificationBell.vue
+│       ├── UserMenu.vue
+│       ├── ProjectCard.vue
+│       ├── DeploymentStatus.vue
+│       └── ActivityFeed.vue
+├── composables/               # Reusable composition functions
+│   ├── useAuth.ts
+│   ├── useNotification.ts
+│   ├── useModal.ts
+│   ├── useTheme.ts
+│   ├── useForm.ts
+│   └── usePagination.ts
+├── layouts/                   # Page layouts
+│   └── default.vue
+├── middleware/                # Route middleware
+│   └── auth.ts
+├── pages/                     # Application pages
+│   ├── dashboard.vue
+│   ├── projects/
+│   │   ├── index.vue
+│   │   └── [id].vue
+│   └── settings/
+│       └── profile.vue
+├── types/                     # TypeScript type definitions
+│   └── index.ts
+├── utils/                     # Utility functions
+│   ├── validation.ts
+│   ├── formatting.ts
+│   └── constants.ts
+├── nuxt.config.ts            # Nuxt configuration
+├── tailwind.config.js        # Tailwind configuration
+└── package.json              # Dependencies
+```
 
-**Node:**
+---
 
-Strapi only supports maintenance and LTS versions of Node.js. Please refer to the <a href="https://nodejs.org/en/about/releases/">Node.js release schedule</a> for more information. NPM versions installed by default with Node.js are supported. Generally it's recommended to use yarn over npm where possible.
+## 🎨 Component Library
 
-| Strapi Version  | Recommended | Minimum |
-| --------------- | ----------- | ------- |
-| 5.31.0 and up   | 24.x        | 20.x    |
-| 5.0.0 to 5.30.1 | 20.x        | 18.x    |
-| 4.14.5 and up   | 20.x        | 18.x    |
-| 4.11.0 and up   | 18.x        | 16.x    |
-| 4.3.9 to 4.10.x | 18.x        | 14.x    |
-| 4.0.x to 4.3.8  | 16.x        | 14.x    |
+DeployHub includes a comprehensive component library. See [COMPONENTS.md](./COMPONENTS.md) for detailed documentation.
 
-**Database:**
+### Quick Examples
 
-| Database   | Recommended | Minimum |
-| ---------- | ----------- | ------- |
-| MySQL      | 8.0         | 8.0     |
-| MariaDB    | 11.2        | 10.3    |
-| PostgreSQL | 16.0        | 14.0    |
-| SQLite     | 3           | 3       |
+**Button Component**
+```vue
+<Button variant="primary" :iconLeft="Rocket" @click="deploy">
+  Deploy Now
+</Button>
+```
 
-**We recommend always using the latest version of Strapi stable to start your new projects**.
+**Card Component**
+```vue
+<Card hover gradient>
+  <template #header>
+    <h3>Project Stats</h3>
+  </template>
+  <StatsCard title="Deployments" :value="42" />
+</Card>
+```
 
-## Features
+**Modal Component**
+```vue
+<Modal :isOpen="isOpen" @close="isOpen = false">
+  <template #header>Confirm Action</template>
+  <p>Are you sure?</p>
+</Modal>
+```
 
-- **Content Types Builder**: Build the most flexible publishing experience for your content managers, by giving them the freedom to create any page on the go with [fields](https://docs.strapi.io/user-docs/content-manager/writing-content#filling-up-fields), components and [Dynamic Zones](https://docs.strapi.io/user-docs/content-manager/writing-content#dynamic-zones).
-- **Media Library**: Upload your images, videos, audio or documents to the media library. Easily find the right asset, edit and reuse it.
-- **Internationalization**: The Internationalization (i18n) plugin allows Strapi users to create, manage and distribute localized content in different languages, called "locales"
-- **Role Based Access Control**: Create an unlimited number of custom roles and permissions for admin and end users.
-- **GraphQL or REST**: Consume the API using REST or GraphQL
+---
 
-You can unlock additional features such as SSO, Audit Logs, Review Workflows in [Strapi Cloud](https://cloud.strapi.io/login?source=github1) or [Strapi Enterprise](https://strapi.io/enterprise?source=github1).
+## 🔌 Composables
 
-**[See more on our website](https://strapi.io/overview)**.
+### useAuth
+```typescript
+const { user, signIn, signUp, signOut } = useAuth()
 
-## Contributing
+await signIn('email@example.com', 'password')
+```
 
-Please read our [Contributing Guide](./CONTRIBUTING.md) before submitting a Pull Request to the project.
+### useNotification
+```typescript
+const { success, error, warning, info } = useNotification()
 
-## Community support
+success('Deployment successful!', 'Your app is now live')
+```
 
-For general help using Strapi, please refer to [the official Strapi documentation](https://docs.strapi.io). For additional help, you can use one of these channels to ask a question:
+### useTheme
+```typescript
+const { theme, isDark, toggleTheme } = useTheme()
 
-- [Discord](https://discord.strapi.io) (For live discussion with the Community and Strapi team)
-- [GitHub](https://github.com/strapi/strapi) (Bug reports, Contributions)
-- [Community Forum](https://forum.strapi.io) (Questions and Discussions)
-- [Feedback section](https://feedback.strapi.io) (Roadmap, Feature requests)
-- [Twitter](https://twitter.com/strapijs) (Get the news fast)
-- [Facebook](https://www.facebook.com/Strapi-616063331867161)
-- [YouTube Channel](https://www.youtube.com/strapi) (Learn from Video Tutorials)
+toggleTheme() // Switch between light and dark
+```
 
-## Migration
+See [COMPONENTS.md](./COMPONENTS.md) for complete composable documentation.
 
-Follow our [migration guides](https://docs.strapi.io/developer-docs/latest/update-migration-guides/migration-guides.html) on the documentation to keep your projects up-to-date.
+---
 
-## Roadmap
+## 🚀 Deployment
 
-Check out our [roadmap](https://feedback.strapi.io) to get informed of the latest features released and the upcoming ones. You may also give us insights and vote for a specific feature.
+### Vercel (Recommended)
 
-## Documentation
+1. Push your code to GitHub
+2. Import project in Vercel
+3. Add environment variables
+4. Deploy!
 
-See our dedicated [repository](https://github.com/strapi/documentation) for the Strapi documentation, or view our documentation live:
+Configuration is already included in `vercel.json`.
 
-- [Developer docs](https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html)
-- [User guide](https://docs.strapi.io/user-docs/latest/getting-started/introduction.html)
-- [Cloud guide](https://docs.strapi.io/cloud/intro)
+### Netlify
 
-## Try live demo
+```bash
+npm run build
+npm run generate
+```
 
-See for yourself what's under the hood by getting access to a [hosted Strapi project](https://strapi.io/demo) with sample data.
+Deploy the `.output/public` directory.
 
-## License
+### Docker
 
-See the [LICENSE](./LICENSE) file for licensing information.
+```dockerfile
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+RUN npm run build
+EXPOSE 3000
+CMD ["node", ".output/server/index.mjs"]
+```
+
+---
+
+## 📝 Development Guide
+
+### Adding New Components
+
+1. Create component in appropriate directory (`components/ui/`, `components/data/`, etc.)
+2. Use TypeScript for props and events
+3. Follow existing naming conventions
+4. Add to COMPONENTS.md documentation
+
+### Code Style
+
+- Use Composition API with `<script setup>`
+- TypeScript for type safety
+- TailwindCSS for styling
+- Follow Vue 3 best practices
+
+### Testing
+
+```bash
+# Run type checking
+npm run type-check
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+---
+
+## 🌐 Environment Variables
+
+| Variable | Description | Required |
+|----------|-------------|----------|
+| `SUPABASE_URL` | Your Supabase project URL | Yes |
+| `SUPABASE_KEY` | Your Supabase anon/public key | Yes |
+
+---
+
+## 📚 Documentation
+
+- [Component Documentation](./COMPONENTS.md) - Complete component API reference
+- [Nuxt Documentation](https://nuxt.com/docs) - Nuxt 3 framework docs
+- [TailwindCSS Documentation](https://tailwindcss.com/docs) - Styling reference
+- [Supabase Documentation](https://supabase.com/docs) - Authentication & database
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🎯 Roadmap
+
+- [ ] GitHub integration for automatic deployments
+- [ ] Real-time deployment logs
+- [ ] Custom domain management
+- [ ] Team permissions and roles
+- [ ] Deployment rollback functionality
+- [ ] Performance analytics dashboard
+- [ ] Webhook integrations
+- [ ] Multi-region deployment
+
+---
+
+## 💬 Support
+
+For questions or support:
+- 📧 Email: support@deployhub.com
+- 💬 Discord: [Join our community](https://discord.gg/deployhub)
+- 📖 Documentation: [docs.deployhub.com](https://docs.deployhub.com)
+
+---
+
+## 🙏 Acknowledgments
+
+Built with ❤️ using:
+- [Nuxt](https://nuxt.com/)
+- [Vue](https://vuejs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Supabase](https://supabase.com/)
+- [Lucide Icons](https://lucide.dev/)
+- [VueUse](https://vueuse.org/)
+
+---
+
+**Made with 💙 by the DeployHub Team**
+
